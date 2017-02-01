@@ -1,22 +1,21 @@
 {
-  "name": "react",
+  "name": "react-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dest",
+    "watch": "babel src -d dest -w",
+    "server": "browser-sync start --server --files='**/*.*'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/freelance-study/react.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/freelance-study/react/issues"
-  },
-  "homepage": "https://github.com/freelance-study/react#readme",
   "devDependencies": {
-    "express": "^4.14.0"
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "browser-sync": "^2.18.6"
   }
 }
